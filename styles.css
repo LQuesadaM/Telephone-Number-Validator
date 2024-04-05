@@ -7,3 +7,13 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  /* bgColors */
+  --bgColors: #333a73;
+  --bgMain: #387adf;
+
+  /*	fonts	*/
+  --poppinsFont: "Poppins", sans-serif;
+  --interFont: "Inter", sans-serif;
+}
