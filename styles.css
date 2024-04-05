@@ -17,3 +17,11 @@
   --poppinsFont: "Poppins", sans-serif;
   --interFont: "Inter", sans-serif;
 }
+
+body {
+  background-color: var(--bgColors);
+}
+
+.wrapper {
+  background-color: var(--bgMain);
+}
