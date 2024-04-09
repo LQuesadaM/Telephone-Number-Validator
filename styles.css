@@ -19,9 +19,13 @@
 }
 
 body {
+  font-family: var(--interFont);
   background-color: var(--bgColors);
 }
 
 .wrapper {
+  min-width: 350px;
+  width: 750px;  
+  margin: 0 auto;
   background-color: var(--bgMain);
 }
