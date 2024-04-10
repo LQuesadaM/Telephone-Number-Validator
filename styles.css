@@ -37,3 +37,10 @@
   background-color: var(--bgMain);
   border-radius: 15px;
 }
+
+.wrapper-title {
+  color: #fff;
+  font-family: var(--poppinsFont);
+  font-size: 1.8rem;
+}
+
