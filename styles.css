@@ -18,14 +18,20 @@
   --interFont: "Inter", sans-serif;
 }
 
-body {
-  font-family: var(--interFont);
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--bgColors);
 }
 
-.wrapper {
-  min-width: 350px;
-  width: 750px;  
-  margin: 0 auto;
+.wrapper-hero {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80vw;
+  width: 100%;
+  padding: 50px;
   background-color: var(--bgMain);
 }
