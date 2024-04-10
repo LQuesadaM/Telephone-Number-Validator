@@ -30,8 +30,10 @@
 .wrapper-hero {
   display: flex;
   justify-content: space-around;
-  max-width: 80vw;
+  max-width: 750px;
   width: 100%;
-  padding: 50px;
+  padding: 20px;
+  margin: 0 1rem;
   background-color: var(--bgMain);
+  border-radius: 15px;
 }
