@@ -6,3 +6,8 @@ const result = document.querySelector("#results-div");
 checkButton.addEventListener("click", () => {
   if (input.value === "") alert("Please provide a phone number");
 });
+
+clearButton.addEventListener("click", () => {
+  result.classList.add("hiden");
+  input.value = "";
+});
