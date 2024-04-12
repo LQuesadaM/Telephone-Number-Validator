@@ -14,6 +14,7 @@ checkButton.addEventListener("click", () => {
 
 clearButton.addEventListener("click", () => {
   result.classList.add("hiden");
+  result.textContent = "";
   input.value = "";
 });
 
