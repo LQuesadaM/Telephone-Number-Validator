@@ -73,12 +73,16 @@
   padding: 5px;
   border-radius: 5px;
   margin: 5px 0;
-  border: 1px solid black;
+  border: 2px solid #148f14;
   text-align: center;
 }
 
 .hiden {
   display: none;
+}
+
+.invalid {
+  border: 2px solid red;
 }
 
 .wrapper-btn {
