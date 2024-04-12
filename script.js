@@ -9,11 +9,18 @@ checkButton.addEventListener("click", () => {
     return;
   }
 
-  result.classList.remove("hiden");
-  result.textContent = input.value;
+  validate(input.value);
 });
 
 clearButton.addEventListener("click", () => {
   result.classList.add("hiden");
   input.value = "";
 });
+
+const validate = (str) => {
+  const regex = /^1?\s?(\d{3}|\(\d{3}\))-?\s?\d{3}-?\s?\d{4}$/gm;
+  result.classList.remove("hiden");
+  result.textContent = regex.test(str)
+    ? `Valid US number: ${str}`
+    : `Invalid US number: ${str}`;
+};
