@@ -20,7 +20,12 @@ clearButton.addEventListener("click", () => {
 const validate = (str) => {
   const regex = /^1?\s?(\d{3}|\(\d{3}\))-?\s?\d{3}-?\s?\d{4}$/gm;
   result.classList.remove("hiden");
-  result.textContent = regex.test(str)
-    ? `Valid US number: ${str}`
-    : `Invalid US number: ${str}`;
+
+  if (regex.test(str)) {
+    result.classList.remove("invalid");
+    result.textContent = `Valid US number: ${str}`;
+  } else {
+    result.classList.add("invalid");
+    result.textContent = `Invalid US number: ${str}`;
+  }
 };
